@@ -1,0 +1,38 @@
+body { font-family:Verdana;
+	background:#111; }
+	
+.main{
+	margin: 20 auto; 
+	max-width:1100px; 
+}
+
+.main_div { 
+	background:#fff; 
+	padding:25px; 
+	color:#111; 
+	max-width:1100px; 
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	border-bottom: 3px solid #000;
+	}
+.main_header { 
+	background:#222; 
+	padding:10px 25px 10px 25px;
+	max-width:1100px; 
+	border-left: 3px solid #111;
+	border-right: 3px solid #111;
+
+	}
+		
+h1, h2
+{
+	margin:0px;
+	padding:0px;
+}
+.main_header h1{ font-size:xx-large; margin-left:-15; color:#333; }
+.main_div h1 {font-size:xx-large; color:#222}
+h2{font-size:x-large; color:#222}
+h3{font-size:large; color:#222}
+a:visited {color:#666;}
+a {color:#000;target-name:new;target-new:tab;}
+.active-list{list-style:none;padding-left:20; margin-left:0px}
