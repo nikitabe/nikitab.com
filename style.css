@@ -36,3 +36,4 @@ h3{font-size:large; color:#222}
 a:visited {color:#666;}
 a {color:#000;target-name:new;target-new:tab;}
 .active-list{list-style:none;padding-left:20; margin-left:0px}
+ul{list-style:none;padding-left:0;}
