@@ -1,5 +1,11 @@
 body { font-family:Verdana;
-	background:#111; }
+	background-color:#111;
+	background-image:
+		repeating-radial-gradient(circle at 28% 38%, rgba(255,255,255,.055) 0, rgba(255,255,255,.055) 1px, transparent 2px, transparent 7px),
+		repeating-radial-gradient(circle at 72% 44%, rgba(255,255,255,.04) 0, rgba(255,255,255,.04) 1px, transparent 2px, transparent 8px),
+		radial-gradient(circle at 50% 0, #272727 0, #111 58%);
+	background-size:100% 100%;
+	background-attachment:fixed; }
 	
 .main{
 	margin: 20 auto; 
