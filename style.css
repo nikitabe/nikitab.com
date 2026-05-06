@@ -10,6 +10,7 @@ body { font-family:Verdana;
 .main{
 	margin: 20 auto; 
 	max-width:1100px; 
+	position:relative;
 }
 
 .main_div { 
@@ -20,6 +21,8 @@ body { font-family:Verdana;
 	border-left: 3px solid #000;
 	border-right: 3px solid #000;
 	border-bottom: 3px solid #000;
+	position:relative;
+	z-index:4;
 	}
 .main_header { 
 	background:#222; 
@@ -27,7 +30,63 @@ body { font-family:Verdana;
 	max-width:1100px; 
 	border-left: 3px solid #111;
 	border-right: 3px solid #111;
+	position:relative;
+	z-index:2;
 
+	}
+.peek_guy {
+	position:absolute;
+	top:10px;
+	right:54px;
+	width:150px;
+	height:75px;
+	z-index:3;
+	animation: peek-bob 3.6s ease-in-out infinite;
+	pointer-events:none;
+	}
+.peek_guy svg {
+	display:block;
+	width:100%;
+	height:100%;
+	overflow:visible;
+	}
+.peek_guy_body {
+	filter: drop-shadow(0 3px 2px rgba(0,0,0,.25));
+	}
+.peek_guy_eye {
+	fill:#fff;
+	stroke:#111;
+	stroke-width:5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	transform-origin:center;
+	animation: peek-blink 5.8s infinite;
+	}
+.peek_guy_pupil {
+	fill:#111;
+	}
+.peek_guy_highlight {
+	fill:#fff;
+	}
+.peek_guy_brow {
+	fill:none;
+	stroke:#111;
+	stroke-width:5;
+	stroke-linecap:round;
+	}
+@keyframes peek-bob {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-5px); }
+	}
+@keyframes peek-blink {
+	0%, 46%, 50%, 100% { transform: scaleY(1); }
+	48% { transform: scaleY(.12); }
+	}
+@media (prefers-reduced-motion: reduce) {
+	.peek_guy,
+	.peek_guy_eye {
+		animation:none;
+		}
 	}
 		
 h1, h2
